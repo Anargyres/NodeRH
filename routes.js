@@ -1,4 +1,5 @@
 const candidatController = require('./controllers/candidatController.js');
+const offerController = require('./controllers/offerController.js');
 
 function init(app) {
   initCandidatController(app);
@@ -12,7 +13,7 @@ function initCandidatController(app) {
 }
 
 function initOfferController(app) {
-
+  app.get('/offer/', offerController.getAllOffers);
 }
 
 function initEntrepriseController(app) {

@@ -45,6 +45,10 @@ const offer = db.define('offers', {
       type: Sequelize.STRING,
       allowNull: true,
     },
+    openning_date: {
+      type: Sequelize.DATE,
+      allowNull: false,
+    },
   });
 
   module.exports = offer;
