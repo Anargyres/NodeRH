@@ -17,7 +17,7 @@ const financial = db.define('entreprises', {
       allowNull: true,
     },
     tarif_offre: {
-      type: Sequelize.DOUBLe,
+      type: Sequelize.DOUBLE,
       allowNull: true,
     },
     tarif_recrutement: {
@@ -26,6 +26,10 @@ const financial = db.define('entreprises', {
     },
     paiement_status: {
       type: Sequelize.BOOLEAN,
+      allowNull: false,
+    },
+    id_offer: {
+      type: Sequelize.INTEGER,
       allowNull: false,
     },
   });
