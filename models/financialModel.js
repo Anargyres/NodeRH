@@ -2,7 +2,7 @@ const db = require('../mysql.js');
 const Sequelize = require('sequelize');
 
 // IF sequelize
-const financial = db.define('entreprises', {
+const financial = db.define('financials', {
     id: {
       type: Sequelize.INTEGER,
       allowNull: false,
