@@ -24,6 +24,10 @@ const financial = db.define('entreprises', {
       type: Sequelize.DOUBLE,
       allowNull: true,
     },
+    paiement_status: {
+      type: Sequelize.BOOLEAN,
+      allowNull: false,
+    },
   });
 
   module.exports = financial;
